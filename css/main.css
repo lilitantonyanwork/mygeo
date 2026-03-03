@@ -464,6 +464,7 @@ header{
     padding-bottom: 80px;
     position: relative;
     z-index: 1;
+    padding-left: 120px;
 }
 .features__list{
     margin-top: 40px;
