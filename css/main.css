@@ -75,7 +75,7 @@ header{
     padding-bottom: 20px;
     position: absolute;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
     top: 19px;
 }
 .banner{
@@ -776,4 +776,409 @@ footer{
     margin-right: 36px;
     color: #ffffff;
 
+}
+@media screen and (max-width: 1340px){
+    .container{
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .about__img:first-child{
+        margin-right: 180px;
+    }
+    .work__item:first-child{
+        max-width: calc(100% - 443px);
+    }
+    .work__item:nth-child(3){
+        max-width: calc(100%/3 - 13px);
+    }
+    .work__item:nth-child(4){
+        max-width: calc(100%/3 - 13px);
+    }
+    .work__item:nth-child(5){
+        max-width: calc(100%/3 - 13px);
+    }
+    .work__item:nth-child(6){
+        max-width: calc(100% - 724px);
+    }
+    .numbers__right img{
+        max-width: calc(100%/2 - 10px);
+    }
+    .technic__item{
+        max-width: calc(100%/2 - 15px);
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    .about__img:first-child {
+        margin-right: 150px;
+    }
+
+    .about__content {
+        gap: 40px;
+    }
+
+    .form__col {
+        max-width: 300px;
+    }
+
+    .features__right img {
+        max-width: calc(100% - 760px);
+    }
+    .features__left{
+        padding-left: 80px;
+    }
+    .drilling__right{
+        max-width: 700px;
+    }
+    .drilling__left {
+        max-width: calc(100% - 700px);
+    }
+    .footer__center{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .features__left {
+        padding-left: 40px;
+        padding-top: 40px;
+        max-width: 600px;
+    }
+    .features__right img{
+        max-width: calc(100% - 640px);
+    }
+
+}
+@media  screen and (max-width: 1024px) {
+    .banner__content{
+        padding-top: 200px;
+    }
+    .banner__title{
+        font-size: 56px;
+        line-height: 70px;
+    }
+    .banner{
+        height: 100vh;
+    }
+    .about__right{
+        max-width: 450px;
+    }
+    .service__content{
+        flex-direction: column;
+        gap: 20px   ;
+    }
+    .service__right{
+        max-width: 100%;
+    }
+    .service__list{
+        padding: 40px;
+    }
+    .service__item h4{
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+    .service__item p{
+        font-size: 16px;
+    }
+    .numbers__right{
+        max-width: 100%;
+    }
+    .numbers__left{
+        max-width: 100%;
+    }
+    .numbers__content{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .work__item{
+        max-width: calc(100%/2 - 12px) !important;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .form__col{
+        max-width: 100%;
+    }
+    .form .btn__green{
+        margin: 0 auto;
+    }
+    .section__title{
+        font-size: 40px;
+    }
+    .features__left{
+        max-width: 100%;
+        padding-right: 40px;
+    }
+    .features__content{
+        flex-direction: column;
+    }
+    .features__right img{
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        height: 400px;
+    }
+    .features__list{
+        max-width: 100%;
+    }
+    .technic__content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .technic__right{
+        max-width: 100%;
+    }
+    .technic__list{
+        margin-top: 0;
+    }
+    .reviews__content{
+        flex-direction: column;
+    }
+
+    .review__left{
+        max-width: 100% ;
+    }
+    .review__right{
+        max-width: 100%;
+    }
+    .drilling__content{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer__bottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .contact__content{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 990px){
+    .banner__text{
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    .banner__text--secondary{
+        font-size: 16px;
+    }
+    .banner__title{
+        font-size: 48px;
+    }
+    .header__logo{
+        width: 150px;
+    }
+    .about{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .about__content{
+        flex-direction: column;
+    }
+    .about__right{
+        max-width: 100%;
+    }
+    .about__left{
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .about__img:first-child{
+        margin-right: -150px;
+    }
+    .about__img:last-child{
+        margin-top: 0;
+    }
+    .section__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .work__text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .work__item{
+        padding: 30px;
+    }
+    .footer__col:nth-child(2){
+        max-width: 250px;
+    }
+    header{
+        padding: 0;
+    }
+    .header__logo {
+        width: 100px;
+    }
+    .banner__content{
+        padding-top: 150px;
+    }
+    .drilling__left{
+        max-width: 100%;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .heaader__link{
+        display: none;
+    }
+    .heaader__link:first-child{
+        display: flex;
+    }
+    .service__list{
+        flex-direction: column;
+    }
+    .service__item{
+        padding-left: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #EBEBEB;
+        border-right: 0;
+        padding-top: 20px;
+    }
+    .service__item:last-child{
+        border-bottom: 0;
+    }
+    .service__item h4 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .footer__top{
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+    footer{
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .footer__left h2{
+        font-size: 30px ;
+        text-align: center;
+    }
+    .footer__center{
+        flex-direction: column;
+    }
+    .footer__col:nth-child(2){
+        max-width: 100%;
+    }
+    .footer__menu{
+        height: 100px;
+    }
+    .footer__center{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer__bottom{
+        padding-top: 30px;
+    }
+    .btn__green--rounded{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 600px){
+    .banner__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .about__right img{
+        width: auto;
+        height: auto;
+    }
+    .services{
+        padding-top: 80px;
+    }
+    .work__item{
+        max-width: 100%!important;
+    }
+    .contact__content{
+        padding: 30px;
+        border-radius: 30px;
+    }
+    .section__title{
+        font-size: 28px;
+    }
+    .form{
+        width: calc(100% - 60px);
+        border-radius: 30px;
+
+    }
+    .form .btn__green{
+        width: 100%;
+    }
+    .features__item{
+        width: 100%;
+    }
+    .technic__item{
+        max-width: 100%;
+    }
+    .review__list{
+        padding-bottom: 80px;
+    }
+    .reviews{
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    .technics{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .drilling {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .footer__left p{
+        text-align: center;
+    }
+    .footer__bottom--left{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media  screen and (max-width: 480px) {
+    .numbers__right{
+        flex-direction: column;
+    }
+    .numbers__right img{
+        max-width: 100%;
+    }
+    .form{
+        position: relative;
+        bottom: -10px;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 30px;
+        padding: 20px;
+    }
+    .contact{
+        margin-bottom: 80px;
+    }
+    .features__item p{
+        font-size: 16px;
+    }
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contact__content{
+        height: auto;
+
+    }
+    .features__left{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer__col:last-child{
+        max-width: 100%;
+    }
+    .footer__left h2{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .footer__bottom p{
+        margin-right: 0;
+    }
 }
