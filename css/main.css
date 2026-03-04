@@ -551,7 +551,7 @@ header{
     background: url('../images/r-bg.svg') no-repeat center;
     background-size: cover;
     padding-top: 110px;
-    padding-bottom: 143px;
+    padding-bottom: 80px;
 }
 .review__right{
     max-width: 610px;
@@ -566,6 +566,9 @@ header{
 }
 .review__left{
     max-width: calc(100% - 670px);
+}
+.review__list{
+    margin-top: 40px;
 }
 .review__list p{
     font-family: Manrope,sans-serif;
@@ -598,12 +601,18 @@ header{
 }
 .review__author{
     gap: 15px;
+    max-width: calc(100% - 800px);
+    align-items: center;
+    margin-bottom: 30px;
+}
+.swiper-slide{
+    gap: 40px;
 }
 .reviews .swiper-button-next{
     position: absolute;
-    bottom: 0;
+    bottom: 25%;
     top: auto;
-    right: 0;
+    right: 27%;
     background: url('../images/next.svg') no-repeat;
     width: 56px;
     height: 56px;
@@ -611,9 +620,9 @@ header{
 }
 .reviews .swiper-button-prev{
     position: absolute;
-    bottom: 0;
+    bottom: 25%;
     top: auto;
-    right: 85px ;
+    right: 33% ;
     left: auto;
     background: url('../images/next.svg') no-repeat;
     width: 56px;
@@ -641,6 +650,9 @@ header{
 .drilling__right{
     max-width: 850px;
     width: 100%;
+}
+.drilling__right .section__text{
+    margin-bottom: 0;
 }
 .drilling__left{
     max-width: calc(100% - 850px);
@@ -777,6 +789,20 @@ footer{
     color: #ffffff;
 
 }
+.review__video {
+    max-width: 760px;
+    width: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.review__video video{
+    width: 100%;      /* Set a specific width for the container */
+    height: 400px;
+    border-radius: 40px;/* Set a specific height for the container */
+    object-fit: cover;
+   object-position: center center;
+}
 @media screen and (max-width: 1340px){
     .container{
         max-width: 100%;
@@ -807,7 +833,27 @@ footer{
     .technic__item{
         max-width: calc(100%/2 - 15px);
     }
+    .review__video{
+        max-width: 650px;
 
+    }
+    .review__author{
+        max-width: calc(100% - 690px);
+    }
+    .reviews .swiper-button-prev{
+        right: auto;
+        left: 700px;
+    }
+    .reviews .swiper-button-next{
+        right: auto;
+        left: 780px;
+    }
+    .review__left {
+        max-width: 100%;
+    }
+    .review__right{
+        display: none;
+    }
 }
 @media screen and (max-width: 1200px) {
     .about__img:first-child {
@@ -848,6 +894,25 @@ footer{
     .features__right img{
         max-width: calc(100% - 640px);
     }
+    .review__video {
+        max-width: 550px;
+    }
+    .review__author {
+        max-width: calc(100% - 590px);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 140px;
+    }
+    .reviews .swiper-button-next {
+        right: auto;
+        left: 680px;
+    }
+    .reviews .swiper-button-prev {
+        right: auto;
+        left: 600px;
+    }
+
 
 }
 @media  screen and (max-width: 1024px) {
@@ -1020,6 +1085,30 @@ footer{
         max-width: 100%;
     }
 
+
+}
+@media screen and (max-width: 900px){
+    .review__video {
+        max-width: 450px;
+    }
+    .review__author {
+        max-width: calc(100% - 470px);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 140px;
+    }
+    .reviews .swiper-button-next {
+        right: 0;
+        left: auto;
+    }
+    .reviews .swiper-button-prev {
+        right: 80px;
+        left: auto;
+    }
+    .swiper-slide{
+        gap: 20px;
+    }
 }
 @media screen and (max-width: 768px){
     .heaader__link{
@@ -1078,6 +1167,27 @@ footer{
         width: 80px;
         height: 80px;
     }
+    .swiper-slide{
+        flex-direction: column;
+    }
+    .review__video video{
+        width: 100%;
+        height: 400px;
+    }
+    .review__video {
+        max-width: 450px;
+    }
+    .review__author{
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    .reviews .swiper-button-next{
+        bottom: 0;
+    }
+    .reviews .swiper-button-prev{
+        bottom: 0;
+    }
+
 }
 @media screen and (max-width: 600px){
     .banner__title {
@@ -1180,5 +1290,18 @@ footer{
     }
     .footer__bottom p{
         margin-right: 0;
+    }
+    .banner {
+        min-height: 600px;
+        height: auto;
+    }
+    .about__img img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center right;
+    }
+    .technic__item img {
+        margin-bottom: 15px;
     }
 }
