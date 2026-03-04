@@ -80,9 +80,10 @@ header{
 }
 .banner{
     height: 895px;
-    background: url('../images/bg.png') no-repeat;
+    background: url('../images/bg.png') no-repeat center right;
     background-size: cover;
     position: relative;
+
 }
 .banner__content{
     padding-top: 268px;
@@ -328,6 +329,7 @@ header{
 }
 .numbers__right img{
     border-radius: 40px;
+    max-width: calc(100%/2 - 15px);
 }
 .numbers__content{
     margin-bottom: 67px;
@@ -803,6 +805,7 @@ footer{
     object-fit: cover;
    object-position: center center;
 }
+
 @media screen and (max-width: 1340px){
     .container{
         max-width: 100%;
@@ -1294,6 +1297,7 @@ footer{
     .banner {
         min-height: 600px;
         height: auto;
+        background-position: 77% 100%;
     }
     .about__img img{
         object-fit: cover;
