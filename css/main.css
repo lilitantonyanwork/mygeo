@@ -297,7 +297,7 @@ header{
     padding-right: 0;
     border-right: 0;
 }
-.service__item h4{
+.service__item h3{
     font-family: Manrope, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -963,7 +963,7 @@ footer{
     .service__list{
         padding: 40px;
     }
-    .service__item h4{
+    .service__item h3{
         font-size: 32px;
         margin-bottom: 25px;
     }
@@ -1154,7 +1154,7 @@ footer{
     .service__item:last-child{
         border-bottom: 0;
     }
-    .service__item h4 {
+    .service__item h3 {
         font-size: 28px;
         margin-bottom: 15px;
     }
